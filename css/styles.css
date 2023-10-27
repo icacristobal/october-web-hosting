@@ -1,0 +1,127 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+}
+
+header {
+    background-color: #103344;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin: 3rem 0;
+}
+
+h2 {
+    color: #fbc02d;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    margin-bottom: 0.6rem;
+    /* text-shadow: #263238 1px 1px; */
+}
+
+main section:first-child {
+    max-width: 720px;
+}
+
+main section:first-of-type h2 {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+main section:last-child {
+    border-top: 1px solid #263238a8;
+    padding-top: 3rem;
+}
+
+main section:last-child h2 {
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-container img {
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: #103344;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 720px) {
+    main {
+        margin: auto;
+        max-width: 960px;
+    }
+
+    .flex-container {
+        gap: 0 2rem;
+    }
+
+    .flex-container>img,
+    .flex-container>picture:first-of-type {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        max-width: 1024px;
+    }
+
+    .flex-container {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .flex-container > img,
+    .flex-container > picture:first-of-type,
+    .flex-container > picture {
+        width: calc(20% - 1rem);
+    }
+
+}
